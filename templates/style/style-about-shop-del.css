@@ -1,0 +1,22 @@
+.container {
+    background: #CAE4EC;
+    border-radius: 45px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    width:65%;
+    padding:20px 40px 20px 40px;
+}
+
+.path {
+    font-size: 18px;
+    border-bottom:  1px solid #C4C4C4;;
+}
+
+.common {
+    display: flex;
+    flex-direction: column;
+}
+
+.showcase-img{
+    width:80%;
+    margin:auto;
+}
