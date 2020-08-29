@@ -14,7 +14,19 @@
 .common {
     display: flex;
     flex-direction: column;
+   
 }
+
+.common-c{
+    display: flex;
+    justify-content: space-between;
+}
+
+.common-contacts {
+    margin-top:40px;
+    font-size: 28px;
+}
+
 
 .showcase-img{
     width:80%;
