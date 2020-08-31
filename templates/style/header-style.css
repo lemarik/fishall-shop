@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+
+* {
+    font-family: 'Kelly Slab', cursive;
+}
+
 body {
     padding: 0px;
     margin: 0px;
+}
+
+p {
+    margin: 10px 0 10px 0;
 }
 
 header {
@@ -91,7 +101,6 @@ a {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 45px;
     width: 65%;
-    margin: 20px 0 20px 0;
     padding: 20px 40px 15px 40px;
 }
 
@@ -138,4 +147,61 @@ h2 {
 
 .weight {
     margin-right: 30px;
+}
+
+.middle-item-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 45px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    background: #CAE4EC;
+    width: 20%;
+}
+
+.card-picture {
+    width: 100%;
+    border-radius: 45px;
+}
+
+.middle-item-card-container {
+    padding: 10px 30px 10px 30px;
+}
+
+.card-picture-name {
+    font-size: 28px;
+    margin-bottom: 4px;
+}
+
+.is-in-stock {
+    color: #006B04;
+}
+
+.middle-item-card-container>p {
+    font-size: 28px;
+}
+
+.item-card-button-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+}
+
+.info-button-card {
+    width: 40%;
+    background: #FCE0D6;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 63px;
+    text-align: center;
+    padding: 8px 15px 5px 15px;
+}
+
+.buy-button-card {
+    width: 40%;
+    background: #FF7347;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 63px;
+    text-align: center;
+    padding: 8px 15px 5px 15px;
 }
