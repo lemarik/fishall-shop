@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+
+.container {
+    background: #CAE4EC;
+    border-radius: 45px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    width:65%;
+    padding:20px 40px 20px 40px;
+    font-size: 20px;
+    font-family: 'Kelly Slab',cursive;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.path {
+    border-bottom:  1px solid #C4C4C4;;
+}
+
+.common {
+    display: flex;
+    flex-direction: column;
+}
+
+.common-c{
+    display: flex;
+    justify-content: space-between;
+}
+
+.common-contacts {
+    margin-top:40px;
+}
+
+
+.showcase-img{
+    width:80%;
+    margin:auto;
+}
