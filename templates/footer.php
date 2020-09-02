@@ -10,14 +10,14 @@
                     </p>
             </div>
             <div class="footer-img">
-                <img src="img/fishall/Group_fishhall_logo.svg">
+                <img src="http://fishall-shop/templates/img/fishall/Group_fishhall_logo.svg">
             </div>
             <div class="footer-confident-studio">
                 <div>
                     <span>Политика конфиденциальности</span>
                 </div>
                 <div class="studio">
-                    <img src="img/vlander/Group_vlander.svg">
+                    <img src="http://fishall-shop/templates/img/vlander/Group_vlander.svg">
                 </div>
             </div>
         </div>

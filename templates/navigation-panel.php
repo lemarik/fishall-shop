@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="ru">
 
-<head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style/navigate-style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>navigation</title>
-</head>
 
-<navigation>
-    <nav class="navigation">
         <ul class="menu">
             <li>Охлажденная рыба</li>
             <li>Замороженная рыба</li>
@@ -23,7 +13,3 @@
             <li>Готовая продукция</li>
             <li>Морепрудукты</li>
         </ul>
-    </nav>
-</navigation>
-
-</html>

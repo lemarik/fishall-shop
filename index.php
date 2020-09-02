@@ -11,9 +11,17 @@
 
     include('templates/header.php');
 
-    include('templates/footer.php');
-
 ?>
+<div class="body-container">
+    <?php
+        include('templates/navigation-panel.php');
+        include('templates/start-page-blocks.php');
+    ?>
+</div>
+<?php
+include('templates/footer.php');
+?>
+
 
 </body>
 </html>

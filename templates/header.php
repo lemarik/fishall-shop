@@ -7,18 +7,18 @@
         </div>
     </div>
     <div class="header-main">
-        <img class="main-logo" src="img/new_logo_transparent_bg_1.png">
+        <img class="main-logo" src="http://fishall-shop/templates/img/new_logo_transparent_bg_1.png">
         <input class="search-input" placeholder="Поиск в каталоге">
-        <div class="container">
+        <div class="container-header">
             <div class="basket-container">
-                <img class="header-img" src="img/basket.png">
+                <img class="header-img" src="http://fishall-shop/templates/img/basket.png">
                 <p>Корзина<br>Цена: 3567.33 </p>
             </div>
             <div class="border">
 
             </div>
             <div class="phone-container">
-                <img class="header-img" src="img/basket.png">
+                <img class="header-img" src="http://fishall-shop/templates/img/basket.png">
                 <p>89999794115<br>89999794115</p>
             </div>
         </div>

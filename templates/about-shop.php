@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="style/style-about-shop-del-cont.css">
+    <link rel="stylesheet" href="style/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>about-shop</title>
 </head>
