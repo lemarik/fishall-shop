@@ -1,13 +1,4 @@
-<!DOCTYPE HTML>
-<html lang="ru">
-<head>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="style/header-style.css">
-    <title>Название страницы</title>
-</head>
-<body>
 <header>
-    <!--ИЗМЕНИТЬ НА NAV-->
     <div class="small-nav">
         <div class="small-nav-container">
             <a class="header-link" href="-" nowrap>О магазине</a>
@@ -36,5 +27,3 @@
         Рыбная продукция на любой вкус в Москве
     </span>
 </header>
-</body>
-</html>

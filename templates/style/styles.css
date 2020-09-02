@@ -5,8 +5,8 @@
 }
 
 body {
-    padding: 40px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 p {
@@ -23,7 +23,7 @@ header {
 }
 
 .small-nav {
-    padding: 7px 0px 7px 30px;
+    padding: 7px 0 7px 30px;
     background-color: #E2E2E2;
     width: 100%;
     height: 20px;
@@ -272,4 +272,122 @@ h2 {
 
 .margin-item-card .item-card-button-container >button {
     width: 45%;
+}
+
+
+nav {
+    margin:0;
+    padding:0;
+}
+
+.menu {
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    background: #006197;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border: 2px solid #F6F6F6;
+    width: 20%;
+    color:#FDFDFD;
+    font-size: 18px;
+    text-align: center;
+}
+
+ul>li{
+    padding: 10px 0 10px 0;
+}
+
+.menu li:not(:last-child){
+    border-bottom: 2px solid #F6F6F6;
+}
+
+.container {
+    background: #CAE4EC;
+    border-radius: 45px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    width:65%;
+    padding:20px 40px 20px 40px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.path {
+    border-bottom:  1px solid #C4C4C4;;
+}
+
+.common {
+    display: flex;
+    flex-direction: column;
+}
+
+.common-c{
+    display: flex;
+    justify-content: space-between;
+}
+
+.common-contacts {
+    margin-top:40px;
+}
+
+.showcase-img{
+    width:80%;
+    margin:auto;
+}
+
+footer {
+    background: #FFFFFF;
+    border-top: 2px solid #E2E2E2;
+    color: black;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.footer-content {
+    margin: 0 30px 0 30px;
+}
+
+.footer-content-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-img {
+    margin-top: 30px;
+}
+
+.footer-confident-studio {
+    flex-direction: column;
+}
+
+.footer-confident-studio span {
+    align-items: center;
+}
+
+.studio {
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 850px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2){
+
+    footer {
+        background: #FFFFFF;
+        border-top: 2px solid #E2E2E2;
+        color: black;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .footer-content {
+        margin: 0px 30px 0 30px;
+    }
+
+    .footer-content-items {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
