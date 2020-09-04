@@ -56,7 +56,9 @@ a {
     width: 80%;
     max-width: 800px;
     height: 50px;
-    margin-left: 20px;
+    padding-left: 20px;
+    border-radius: 30px;
+    border: 2px solid #E2E2E2;
 }
 
 .basket-container {
@@ -212,7 +214,7 @@ h2 {
 }
 
 .main-container {
-    width: 70%;
+    width: 72%;
     display: flex;
     flex-direction: column;
 }
@@ -307,7 +309,7 @@ ul>li{
     background: #CAE4EC;
     border-radius: 45px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-    width:65%;
+    width: 68%;
     padding:20px 40px 20px 40px;
     font-size: 20px;
     font-style: normal;
@@ -329,7 +331,8 @@ ul>li{
 }
 
 .common-contacts {
-    margin-top:40px;
+    /*margin-top: 40px;*/
+    align-self: flex-start;
 }
 
 .showcase-img{
@@ -398,4 +401,8 @@ footer {
     padding: 25px 40px 25px 20px;
     display: flex;
     justify-content: space-between;
+}
+
+iframe {
+    align-self: flex-start;
 }
