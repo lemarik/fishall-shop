@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" href="style/style-footer.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Footer</title>
-</head>
-<body>
-
-</body>
 <footer>
     <div class="footer-content">
         <div class="footer-content-items">
@@ -34,4 +23,5 @@
         </div>
     </div>
 </footer>
+</body>
 </html>
