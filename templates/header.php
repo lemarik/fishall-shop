@@ -11,7 +11,7 @@
         <input class="search-input" placeholder="Поиск в каталоге">
         <div class="container-header">
             <div class="basket-container">
-                <img class="header-img" src="http://fishall-shop/templates/img/basket.png">
+                <a href="/pages/basket.php"><img class="header-img" src="http://fishall-shop/templates/img/basket.png"></a>
                 <p>Корзина<br>Цена: 3567.33 </p>
             </div>
             <div class="border">
