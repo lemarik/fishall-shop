@@ -14,7 +14,7 @@
         <div class="container">
             <div class="basket-container">
                 <img class="header-img" src="img/basket.png">
-                <p>Корзина<br>Цена: 3567.33 </p>
+                <p>Корзина<br><span>1</span></p>
             </div>
             <div class="border">
 
