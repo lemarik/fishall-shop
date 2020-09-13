@@ -1,3 +1,5 @@
+/*
+
 let products = [{
     name: 'Sea Urchin',
     tag: 'SeaUrchin',
@@ -11,8 +13,9 @@ let products = [{
     weight: 60,
     inCart: 0
 }]
+*/
 
-let carts = document.querySelectorAll('.middle-item-card');
+let carts = document.querySelectorAll('.buy-button-card');
 
 /*
 carts.forEach((item) => {
@@ -21,6 +24,7 @@ carts.forEach((item) => {
     })
 })
 */
+
 for (let i = 0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
         cartNumbers(products[i]);
@@ -75,6 +79,7 @@ function setItem(item) {
     localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 }
 
+//в локалсторадж заносим полную стоимость
 function totalCost(item) {
     let cartCost = localStorage.getItem('totalCost');
 
@@ -84,6 +89,7 @@ function totalCost(item) {
     ) : localStorage.setItem('totalCost', productPrice);
 }
 
+//отображение корзины
 function displayCart() {
     let cartItems = localStorage.getItem('productsInCart')
     cartItems = JSON.parse(cartItems);

@@ -1,0 +1,17 @@
+{
+    "00001" : {
+        "name": "Sea Urchin",
+        "cost": 50,
+        "image":"templates/img/item-picture.png"
+    },
+    "00002" : {
+        "name": "Sea Urchin 2",
+        "cost": 70,
+        "image":"templates/img/item-picture.png"
+    },
+    "00003" : {
+        "name": "Sea Urchin 3",
+        "cost": 90,
+        "image":"templates/img/item-picture.png"
+    }
+}
