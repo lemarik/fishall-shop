@@ -87,14 +87,15 @@ function totalCost(item) {
 function displayCart() {
     let cartItems = localStorage.getItem('productsInCart')
     cartItems = JSON.parse(cartItems);
-    let productContainer = document.querySelector('.products-container');
+    let productContainer = document.querySelector('.items-table');
+    let bigProductContainer = document.querySelector('.container');
     let cartCost = localStorage.getItem('totalCost');
 
     if (cartItems && productContainer) (
             productContainer.innerHTML = '',
             Object.values(cartItems).map(item => {
                 productContainer.innerHTML += `
-                <div class = 'product'>
+                <div class = 'items-table-product'>
                   <img src="/${item.tag}">
                   <span>${item.name}</span>
                   <span>${item.weight}</span>
@@ -112,16 +113,16 @@ function displayCart() {
             })
     )
 
-    productContainer.innerHTML += `
-      <div class="endTotal">
-        <span>конечная стоимость</span>
-        <span>${cartCost}₽</span>
-      </div>
-      `    
+    let div = document.createElement('div');
+    div.className = 'total';
+    div.innerHTML = `
+      <p>Всего: <span>${cartCost}</span>₽</p>
+        <button class="buy-button-basket">
+            <span>Оформить заказ</span>
+        </button>
+    `
+    bigProductContainer.append(div);   
 
 }
 onLoadCartNumbers()
 displayCart();
-
-
-//////
