@@ -1,4 +1,4 @@
-<nav class="navigation">
+
 	<ul class="menu">
 		<li id="chilled">Охлажденная рыба</li>
 		<li id="frozen">Замороженная рыба</li>
@@ -12,4 +12,3 @@
 		<li id="ready">Готовая продукция</li>
 		<li id="seafood">Морепрудукты</li>
 	</ul>
-</nav>
