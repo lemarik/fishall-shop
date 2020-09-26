@@ -31,6 +31,9 @@
     <div class="main-container-card">
 
         <?php
+            $jsonString = '';
+            $jsonArray = array();
+
             while($row = $query->fetch(PDO::FETCH_OBJ)) {
                 echo  '
                 <div class="middle-item-card">
@@ -53,8 +56,18 @@
                      </div>
                 </div> 
             ';
-
+            $jsonItem = array(
+                'id'      => $row->id,
+                'title'   => $row->title,
+                'price'   => $row->price,
+                'weight'  => $row->weight,
+                'img'     => $row->img
+            );
+            $jsonArray[] = $jsonItem;
             }
+        $jsonString = json_encode($jsonArray, JSON_UNESCAPED_UNICODE);
+        file_put_contents('goods.json', $jsonString);
+        echo $jsonString;
          ?>
     </div>
 
