@@ -25,7 +25,7 @@
         $dsn = 'mysql:host='.$host.';dbname='.$db;
         $pdo = new PDO($dsn, $user, $password);
 
-        $query = $pdo->query('SELECT * FROM `products` ORDER BY `title`');
+        $query = $pdo->query('SELECT * FROM `products` ORDER BY `id`');
     ?>
 
     <div class="main-container-card">
@@ -49,7 +49,7 @@
                                 <button class="info-button-card">
                                     <span>Подробнее</span>
                                 </button>
-                                <button class="buy-button-card">
+                                <button class="buy-button-card" data-id="'.$row->id.'">
                                     <span>Купить</span>
                                 </button>
                             </div>
