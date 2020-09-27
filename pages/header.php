@@ -2,17 +2,17 @@
     <div class="small-nav">
         <div class="small-nav-container">
             <a class="header-link" href="/pages/about.php" nowrap>О магазине</a>
-            <a class="header-link" href="/pages/delivery.php" nowrap>Доставка</a>
+            <a class="header-link" href="pages/delivery.php" nowrap>Доставка</a>
             <a class="header-link" href="/pages/contacts.php" nowrap>Контакты</a>
         </div>
     </div>
     <div class="header-main">
-        <a href="fishall-shop/index.php"><img class="main-logo" src="templates/img/new_logo_transparent_bg_1.png"></a>
+        <a href="../index.php"><img class="main-logo" src="./templates/img/new_logo_transparent_bg_1.png"></a>
         <input class="search-input" placeholder="Поиск в каталоге">
         <div class="container-header">
             <div class="basket-container">
                 <a href="pages/basket.php"><img class="header-img" src="http://fishall-shop/templates/img/basket.png"></a>
-                <p>Корзина<br><span>0</span> </p>
+                <p>Корзина<br><span>0</span></p>
             </div>
             <div class="border">
 

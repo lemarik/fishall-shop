@@ -1,4 +1,6 @@
 let products;
+let buyButton = document.querySelectorAll(".buy-button-card");
+let moreButton = document.querySelectorAll(".info-button-card");
 
 async function getJsonFromFile() {
   fetch("goods.json")
@@ -19,20 +21,34 @@ async function getJsonFromFile() {
     });
 }
 
-let carts = document.querySelectorAll(".buy-button-card");
 getJsonFromFile();
 
-for (let i = 0; i < carts.length; i++) {
-  carts[i].addEventListener("click", () => {
-    console.log(products[i]);
+for (let i = 0; i < moreButton.length; i++) {
+  moreButton[i].addEventListener("click", () => {
+    openMoreInform(products[i]);
+  });
+}
+
+for (let i = 0; i < buyButton.length; i++) {
+  buyButton[i].addEventListener("click", () => {
     cartNumbers(products[i]);
     totalCost(products[i]);
   });
 }
 
+function openMoreInform(item) {
+  let productNumbers = localStorage.getItem(`item`);
+  //productNumbers = parseInt(productNumbers);
+    localStorage.removeItem("item");
+  
+
+  let cartItem = item;
+  localStorage.setItem("item", JSON.stringify(cartItem));
+  location.href = "pages/item-card.php";
+}
+
 function onLoadCartNumbers() {
   let productNumbers = localStorage.getItem("cartNumbers");
-  console.log(productNumbers);
 
   if (productNumbers) {
     document.querySelector(
@@ -43,14 +59,10 @@ function onLoadCartNumbers() {
 
 function cartNumbers(item) {
   let productNumbers = localStorage.getItem(`cartNumbers`);
-  console.log(productNumbers);
-
   productNumbers = parseInt(productNumbers);
-  console.log(productNumbers);
 
   if (productNumbers) {
     localStorage.setItem("cartNumbers", productNumbers + 1);
-    console.log(productNumbers);
     document.querySelector(".basket-container span").textContent =
       productNumbers + 1;
   } else {
@@ -63,16 +75,10 @@ function cartNumbers(item) {
 
 function setItem(item) {
   let cartItems = localStorage.getItem("productsInCart");
-  console.log(cartItems);
   cartItems = JSON.parse(cartItems);
-
-  console.log(cartItems);
 
   if (cartItems != null) {
     if (cartItems[item.id] == undefined) {
-      console.log(item.id);
-      let a = { ...cartItems };
-      console.log(a);
       cartItems = {
         ...cartItems,
         [item.id]: item,
@@ -85,8 +91,6 @@ function setItem(item) {
       [item.id]: item,
     };
   }
-
-  console.log(cartItems);
 
   localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 }
@@ -113,11 +117,12 @@ function displayCart() {
   let cartCost = localStorage.getItem("totalCost");
 
   if (cartItems && productContainer)
-   // (productContainer.innerHTML = ""),
-      Object.values(cartItems).map((item) => {
-        productContainer.innerHTML += `
+    Object.values(cartItems).map((item) => {
+      productContainer.innerHTML += `
                 <div class = 'items-table-product'>
-                  <div class="product-img"><img class="showcase-img" src="../templates/img/${item.img}"></div>
+                  <div class="product-img"><img class="showcase-img" src="../templates/img/${
+                    item.img
+                  }"></div>
                   <div class="product-name">${item.title}</div>
                   <div class="product-weight">${item.weight}</div>
                   <div class="product-price"> ${item.price}</div>
@@ -125,7 +130,7 @@ function displayCart() {
                   <div class="product-total">${item.inCart * item.price}₽</div>
                 </div>
             `;
-      });
+    });
 
   let div = document.createElement("div");
   div.className = "total";

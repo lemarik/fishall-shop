@@ -9,7 +9,7 @@
 
 <?php
 
-include('../templates/header.php');
+include('header.php');
 
 ?>
 <div class="body-container">
