@@ -15,13 +15,25 @@ include('../templates/header.php');
 <div class="body-container">
     <?php
     include('../templates/navigation-panel.php');
-    include('../templates/items-basket-table.php');
     ?>
+    <div class="container">
+      <h1>Корзина</h1>
+        <div class="items-table">
+          <div class="items-table-product">
+              <div style="width: 20%;">Фото:</div>
+              <div style="width: 10%;">Название:</div>
+              <div style="width: 10%;">Вес:</div>
+              <div style="width: 10%;">Цена:</div>
+              <div style="width: 10%;">Количество:</div>
+              <div style="width: 10%;">Итого:</div>
+          </div>
+        </div>
+    </div>
 </div>
 <?php
 include('../templates/footer.php');
 ?>
 
-
+<script src="../templates/scripts/basket.js" type="text/javascript"></script>
 </body>
 </html>

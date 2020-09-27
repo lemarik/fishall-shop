@@ -453,27 +453,27 @@ iframe {
 /*    border: 1px solid black;*/
 /*}*/
 
-#product-img {
+.product-img {
     width: 20%;
 }
 
-#product-name {
+.product-name {
     width: 10%;
 }
 
-#product-weight {
+.product-weight {
     width: 10%;
 }
 
-#product-price {
+.product-price {
     width: 10%;
 }
 
-#product-quantity {
+.product-quantity {
     width: 10%;
 }
 
-#product-total {
+.product-total {
     width: 10%;
 }
 

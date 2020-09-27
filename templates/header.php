@@ -7,12 +7,12 @@
         </div>
     </div>
     <div class="header-main">
-        <a href="http://fishall-shop/index.php"><img class="main-logo" src="http://fishall-shop/templates/img/new_logo_transparent_bg_1.png"></a>
+        <a href="fishall-shop/index.php"><img class="main-logo" src="templates/img/new_logo_transparent_bg_1.png"></a>
         <input class="search-input" placeholder="Поиск в каталоге">
         <div class="container-header">
             <div class="basket-container">
-                <a href="/pages/basket.php"><img class="header-img" src="http://fishall-shop/templates/img/basket.png"></a>
-                <p>Корзина<br>Цена: 3567.33 </p>
+                <a href="pages/basket.php"><img class="header-img" src="http://fishall-shop/templates/img/basket.png"></a>
+                <p>Корзина<br><span>0</span> </p>
             </div>
             <div class="border">
 

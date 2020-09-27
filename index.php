@@ -18,7 +18,7 @@
       //  include('templates/start-page-blocks.php');
 
         $user = 'root';
-        $password = '';
+        $password = 'root';
         $db = 'fishall';
         $host = 'localhost';
 
@@ -61,7 +61,8 @@
                 'title'   => $row->title,
                 'price'   => $row->price,
                 'weight'  => $row->weight,
-                'img'     => $row->img
+                'img'     => $row->img,
+                'inCart'  => $row->inCart
             );
             $jsonArray[] = $jsonItem;
             }
@@ -79,6 +80,6 @@ include('templates/footer.php');
 
 ?>
 
-
+<script src="templates/scripts/basket.js" type="text/javascript"></script>
 </body>
 </html>
